@@ -19,7 +19,7 @@ def test_pred_virginica():
         "sepal_length": 3,
         "sepal_width": 5,
         "petal_length": 3.2,
-        "petal_width": 4.4
+        "petal_width": 4.4,
     }
     with TestClient(app) as client:
         response = client.post("/predict_flower", json=payload)
